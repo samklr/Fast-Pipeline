@@ -26,11 +26,13 @@ class WriteParquetFiles extends SparkJob {
     val outputFolder = jobConfig.getString(OUTPUT.toString())
     val outputNamenode = jobConfig.getString(OUTPUT_NAMENODE.toString())
     val inputConfiguration = getHadoopConf(inputFolder)
-    
+
     val schema = readSchema(inputConfiguration, s"$inputFolder/scheme.txt")
     val valuesRowRdd = readRows(sc, s"$inputFolder/data")
 
     val transactionsSchemaRDD = sqlContext.createDataFrame(valuesRowRdd, schema)
+
+    //TODO : replace saveAsParquet
     transactionsSchemaRDD.saveAsXPatternsParquet(outputNamenode, outputFolder)
   }
   override def validate(sc: SparkContext, config: Config): SparkJobValidation = {
