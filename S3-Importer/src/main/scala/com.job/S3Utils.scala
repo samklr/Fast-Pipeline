@@ -13,9 +13,6 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable.ListBuffer
 import scala.util.{Failure, Try}
 
-/**
- * Created by raduchilom on 4/18/15.
- */
 object S3Utils {
 
   val log = LoggerFactory.getLogger(getClass)
