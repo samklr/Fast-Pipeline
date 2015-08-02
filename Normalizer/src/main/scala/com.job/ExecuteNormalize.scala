@@ -6,10 +6,6 @@ import org.apache.spark.{SparkContext, SparkConf}
 import responses.JobStates
 import spray.http.DateTime
 
-/**
- * Created by raduchilom on 5/4/15.
- */
-
 object ExecuteNormalize extends App {
   implicit val system = ActorSystem()
   val contextName = "transformDataContext"
