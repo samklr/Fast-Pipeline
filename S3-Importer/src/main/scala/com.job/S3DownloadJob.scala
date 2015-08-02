@@ -62,10 +62,10 @@ class S3DownloadJob extends SparkJob {
   }
 
   override def validate(sc: SparkContext, config: Config): SparkJobValidation = {
-        if(config.hasPath("s3.bucket")) SparkJobInvalid("The \"s3.bucket\" parameter is missing.")
+        if(config.hasPath("s3.bucket")) SparkJobInvalid("Bucket parameters are missing.")
 
-        if(config.hasPath("fs.output")) SparkJobInvalid("The \"fs.output\" parameter is missing.")
-        if(config.hasPath("num.partitions")) SparkJobInvalid("The \"num.partitions\" parameter is missing.")
+        if(config.hasPath("fs.output")) SparkJobInvalid("\"fs.output\" parameter is missing.")
+        if(config.hasPath("num.partitions")) SparkJobInvalid("\"num.partitions\" parameter missing.")
 
     SparkJobValid()
   }
