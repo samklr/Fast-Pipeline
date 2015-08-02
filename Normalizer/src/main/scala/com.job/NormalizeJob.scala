@@ -11,9 +11,6 @@ import com.typesafe.config.Config
 
 import scala.collection.mutable.ListBuffer
 
-/**
- * Created by raduc on 03/11/14.
- */
 object NormalizeJob {
   final val COLUMN_SEPARATOR = ","
   final val excludeColumns = List(2, 4, 18, 19)
