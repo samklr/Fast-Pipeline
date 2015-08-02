@@ -8,9 +8,6 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable.ListBuffer
 import scala.util.{Success, Failure, Try}
 
-/**
- * Created by raduc on 03/11/14.
- */
 class S3DownloadJob extends SparkJob {
 
   val log = LoggerFactory.getLogger(getClass)
