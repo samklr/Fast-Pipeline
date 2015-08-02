@@ -6,9 +6,6 @@ import com.typesafe.config.{ConfigFactory, Config}
 import org.apache.spark.{SparkContext, SparkConf}
 import responses.JobStates
 
-/**
- * Created by raduchilom on 5/4/15.
- */
 
 object ExecuteDownload extends App {
   implicit val system = ActorSystem()
