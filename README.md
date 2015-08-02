@@ -1,4 +1,4 @@
-## Example of Data-pipeline inspired by Atigeo Xpattern
+## Data-pipeline inspired by Xpattern
 
 Spark -Spark Job Rest - Mesos - Parquet - Tachyon
 
