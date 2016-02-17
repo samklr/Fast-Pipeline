@@ -1,4 +1,4 @@
-## Data-pipeline inspired by Xpattern
+## S3 Data Pipeline
 
 Spark -Spark Job Rest - Mesos - Parquet - Tachyon
 
